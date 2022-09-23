@@ -25,7 +25,7 @@ body {
   margin-right: 80px;
 }
 
-.form-control:first-of-type {
+.form-control:first-of-type:not(section .form-control) {
   border-radius: 20px;
   width: 500px;
   margin-left: 100px;
@@ -269,11 +269,19 @@ button:hover {
 
 section .container:not(form .container) {
   width: 363px;
-  height: 470px;
   left: 299px;
   top: 150px;
   background: rgb(255, 199, 199);
   border-radius: 22px;
+}
+
+.input-group {
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.input-group-text {
+  height: 40px;
 }
 
 .text-capitalize {
@@ -320,7 +328,7 @@ section .register form img {
 /* Media queries */
 
 @media (min-width: 992px) and (max-width: 1149px) {
-  .form-control:first-of-type {
+  .form-control:first-of-type:not(section .form-control) {
     width: 300px;
     margin-left: 30px;
   }
@@ -355,7 +363,7 @@ section .register form img {
 }
 
 @media (max-width: 991px) {
-  .form-control:first-of-type {
+  .form-control:first-of-type:not(section .form-control) {
     margin: 20px 10px 20px;
     border-radius: 50px;
     width: 280px;
@@ -372,9 +380,9 @@ section .register form img {
     padding-left: 30px;
   }
 
-  section .register:not(form .register) {
+  /* section .register:not(form .register) {
     height: 570px;
-  }
+  } */
 
   .slider .card {
     width: 10rem;
