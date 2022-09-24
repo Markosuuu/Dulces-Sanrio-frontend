@@ -25,7 +25,7 @@ body {
   margin-right: 80px;
 }
 
-.form-control:first-of-type:not(section .form-control) {
+.barra-busqueda {
   border-radius: 20px;
   width: 500px;
   margin-left: 100px;
@@ -325,10 +325,46 @@ section .register form img {
   margin-left: 500px;
 }
 
+/* Reglas para ayuda */
+.ayuda {
+  color: #DE9898;
+}
+
+.ayuda-form {
+  background-color: #ffd0d0;
+  border-radius: 18px;
+  color: #d68080;
+  font-weight: 900;
+  height: 467px;
+  width: 730px;
+}
+
+.ayuda .como-comprar,
+.ayuda .medios-pago {
+  width: 500px;
+  color: #7D6B6B;
+}
+
+.ayuda .como-comprar h2,
+.ayuda .medios-pago h2 {
+  border-bottom: #BD8989 3px solid;
+  color: #F27474;
+}
+
+.ayuda .como-comprar .opciones:nth-of-type(2) {
+  border-right: #BD8989 2px solid;
+  border-left: #BD8989 2px solid;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+
+}
+
 /* Media queries */
 
 @media (min-width: 992px) and (max-width: 1149px) {
-  .form-control:first-of-type:not(section .form-control) {
+  .barra-busqueda {
     width: 300px;
     margin-left: 30px;
   }
@@ -363,7 +399,7 @@ section .register form img {
 }
 
 @media (max-width: 991px) {
-  .form-control:first-of-type:not(section .form-control) {
+  .barra-busqueda {
     margin: 20px 10px 20px;
     border-radius: 50px;
     width: 280px;
@@ -405,6 +441,11 @@ section .register form img {
   .check {
     margin-left: 100px;
   }
+
+  .ayuda-form {
+    width: 400px;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -458,7 +499,15 @@ section .register form img {
   .pedido {
     width: 300px;
   }
+  
+  .ayuda-form {
+    width: 350px;
+  }
 
+  .ayuda .como-comprar,
+  .ayuda .medios-pago {
+    width: 300px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -500,6 +549,15 @@ section .register form img {
   
   .pedido {
     width: 250px;
+  }
+  
+  .ayuda-form {
+    width: 250px;
+  }
+
+  .ayuda .como-comprar,
+  .ayuda .medios-pago {
+    width: 280px;
   }
 }
 
